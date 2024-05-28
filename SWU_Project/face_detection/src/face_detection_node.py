@@ -15,11 +15,11 @@ class FaceDetectionNode(Node):
         super().__init__('face_detection_node')
 
         # Load configuration
-        config_path = self.declare_parameter('config_path', '/home/ubuntu/ros2_ws/src/face_detection/config/face_tracker.yaml').value
+        config_path = self.declare_parameter('config_path', '/home/ubuntu/SWU_Project/SWU_Project/face_detection/config/face_tracker.yaml').value
         with open(config_path, 'r') as file:
             config = yaml.safe_load(file)
 
-        self.model_path = f'/home/ubuntu/ros2_ws/src/face_detection/models/{config["detector_model"]}'
+        self.model_path = f'/home/ubuntu/SWU_Project/SWU_Project/face_detection/models/{config["detector_model"]}'
         self.detection_threshold = config['detection_threshold']
 
         try:

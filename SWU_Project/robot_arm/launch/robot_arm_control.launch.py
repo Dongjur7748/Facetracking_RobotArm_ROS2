@@ -9,8 +9,8 @@ def generate_launch_description():
             name='robot_arm_node',
             output='screen',
             parameters=[
-                {'config_path': '/home/ubuntu/ros2_ws/src/robot_arm/config/joint_limits.yaml'},
-                {'kinematics_path': '/home/ubuntu/ros2_ws/src/robot_arm/config/kinematics.yaml'}
+                {'config_path': '/home/ubuntu/SWU_Project/SWU_Project/robot_arm/config/joint_limits.yaml'},
+                {'kinematics_path': '/home/ubuntu/SWU_Proejct/SWU_Project/robot_arm/config/kinematics.yaml'}
             ]
         )
     ])
