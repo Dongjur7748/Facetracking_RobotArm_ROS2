@@ -1,0 +1,11 @@
+kinematics:
+  base_link:
+    length: 0.14
+  shoulder_link:
+    length: 0.105
+  elbow_link:
+    length: 0.105
+  wrist_pitch_link:
+    length: 0.09
+  wrist_roll_link:
+    length: 0.09
