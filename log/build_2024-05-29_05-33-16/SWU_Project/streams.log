@@ -1,0 +1,44 @@
+[2.752s] Invoking command in '/home/ubuntu/SWU_Project': PS1=(p3.8-env) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/ubuntu/SWU_Project/build/SWU_Project/prefix_override:/home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/SWU_Project build --build-base /home/ubuntu/SWU_Project/build/SWU_Project/build install --record /home/ubuntu/SWU_Project/build/SWU_Project/install.log --install-scripts $base/lib/SWU_Project --single-version-externally-managed install_data
+[3.664s] running egg_info
+[3.665s] creating build/SWU_Project/SWU_Project.egg-info
+[3.666s] writing build/SWU_Project/SWU_Project.egg-info/PKG-INFO
+[3.667s] writing dependency_links to build/SWU_Project/SWU_Project.egg-info/dependency_links.txt
+[3.668s] writing entry points to build/SWU_Project/SWU_Project.egg-info/entry_points.txt
+[3.668s] writing requirements to build/SWU_Project/SWU_Project.egg-info/requires.txt
+[3.669s] writing top-level names to build/SWU_Project/SWU_Project.egg-info/top_level.txt
+[3.674s] writing manifest file 'build/SWU_Project/SWU_Project.egg-info/SOURCES.txt'
+[3.800s] package init file 'SWU_Project/face_detection/__init__.py' not found (or not a regular file)
+[3.800s] package init file 'SWU_Project/robot_arm/__init__.py' not found (or not a regular file)
+[3.802s] reading manifest file 'build/SWU_Project/SWU_Project.egg-info/SOURCES.txt'
+[3.805s] writing manifest file 'build/SWU_Project/SWU_Project.egg-info/SOURCES.txt'
+[3.806s] running build
+[3.806s] running build_py
+[3.807s] creating /home/ubuntu/SWU_Project/build/SWU_Project/build
+[3.807s] creating /home/ubuntu/SWU_Project/build/SWU_Project/build/lib
+[3.807s] creating /home/ubuntu/SWU_Project/build/SWU_Project/build/lib/SWU_Project
+[3.808s] copying SWU_Project/__init__.py -> /home/ubuntu/SWU_Project/build/SWU_Project/build/lib/SWU_Project
+[3.809s] running install
+[3.811s] running install_lib
+[3.815s] creating /home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project
+[3.816s] copying /home/ubuntu/SWU_Project/build/SWU_Project/build/lib/SWU_Project/__init__.py -> /home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project
+[3.818s] byte-compiling /home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project/__init__.py to __init__.cpython-38.pyc
+[3.822s] running install_data
+[3.823s] creating /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/launch
+[3.823s] copying SWU_Project/face_detection/launch/face_detection.launch.py -> /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/launch
+[3.823s] copying SWU_Project/robot_arm/launch/arduino_serial.launch.py -> /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/launch
+[3.825s] copying SWU_Project/robot_arm/launch/robot_arm_control.launch.py -> /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/launch
+[3.826s] creating /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/config
+[3.826s] copying SWU_Project/face_detection/config/face_tracker.yaml -> /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/config
+[3.826s] copying SWU_Project/robot_arm/config/kinematics.yaml -> /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/config
+[3.827s] copying SWU_Project/robot_arm/config/joint_limits.yaml -> /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/config
+[3.827s] creating /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/models
+[3.828s] copying SWU_Project/face_detection/models/ssd_mobilenet_v2_face_quant_postprocess_edgetpu.tflite -> /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/models
+[3.863s] creating /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/urdf
+[3.863s] copying SWU_Project/robot_arm/urdf/braccio_arm.urdf -> /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/urdf
+[3.863s] running install_egg_info
+[3.869s] Copying build/SWU_Project/SWU_Project.egg-info to /home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project-0.0.1-py3.8.egg-info
+[3.873s] running install_scripts
+[3.935s] Installing face_detection_node script to /home/ubuntu/SWU_Project/install/SWU_Project/lib/SWU_Project
+[3.937s] Installing robot_arm_node script to /home/ubuntu/SWU_Project/install/SWU_Project/lib/SWU_Project
+[3.944s] writing list of installed files to '/home/ubuntu/SWU_Project/build/SWU_Project/install.log'
+[4.042s] Invoked command in '/home/ubuntu/SWU_Project' returned '0': PS1=(p3.8-env) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/home/ubuntu/SWU_Project/build/SWU_Project/prefix_override:/home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/SWU_Project build --build-base /home/ubuntu/SWU_Project/build/SWU_Project/build install --record /home/ubuntu/SWU_Project/build/SWU_Project/install.log --install-scripts $base/lib/SWU_Project --single-version-externally-managed install_data
