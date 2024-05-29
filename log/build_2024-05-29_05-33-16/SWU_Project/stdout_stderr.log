@@ -1,0 +1,42 @@
+running egg_info
+creating build/SWU_Project/SWU_Project.egg-info
+writing build/SWU_Project/SWU_Project.egg-info/PKG-INFO
+writing dependency_links to build/SWU_Project/SWU_Project.egg-info/dependency_links.txt
+writing entry points to build/SWU_Project/SWU_Project.egg-info/entry_points.txt
+writing requirements to build/SWU_Project/SWU_Project.egg-info/requires.txt
+writing top-level names to build/SWU_Project/SWU_Project.egg-info/top_level.txt
+writing manifest file 'build/SWU_Project/SWU_Project.egg-info/SOURCES.txt'
+package init file 'SWU_Project/face_detection/__init__.py' not found (or not a regular file)
+package init file 'SWU_Project/robot_arm/__init__.py' not found (or not a regular file)
+reading manifest file 'build/SWU_Project/SWU_Project.egg-info/SOURCES.txt'
+writing manifest file 'build/SWU_Project/SWU_Project.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ubuntu/SWU_Project/build/SWU_Project/build
+creating /home/ubuntu/SWU_Project/build/SWU_Project/build/lib
+creating /home/ubuntu/SWU_Project/build/SWU_Project/build/lib/SWU_Project
+copying SWU_Project/__init__.py -> /home/ubuntu/SWU_Project/build/SWU_Project/build/lib/SWU_Project
+running install
+running install_lib
+creating /home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project
+copying /home/ubuntu/SWU_Project/build/SWU_Project/build/lib/SWU_Project/__init__.py -> /home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project
+byte-compiling /home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project/__init__.py to __init__.cpython-38.pyc
+running install_data
+creating /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/launch
+copying SWU_Project/face_detection/launch/face_detection.launch.py -> /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/launch
+copying SWU_Project/robot_arm/launch/arduino_serial.launch.py -> /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/launch
+copying SWU_Project/robot_arm/launch/robot_arm_control.launch.py -> /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/launch
+creating /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/config
+copying SWU_Project/face_detection/config/face_tracker.yaml -> /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/config
+copying SWU_Project/robot_arm/config/kinematics.yaml -> /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/config
+copying SWU_Project/robot_arm/config/joint_limits.yaml -> /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/config
+creating /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/models
+copying SWU_Project/face_detection/models/ssd_mobilenet_v2_face_quant_postprocess_edgetpu.tflite -> /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/models
+creating /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/urdf
+copying SWU_Project/robot_arm/urdf/braccio_arm.urdf -> /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/urdf
+running install_egg_info
+Copying build/SWU_Project/SWU_Project.egg-info to /home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project-0.0.1-py3.8.egg-info
+running install_scripts
+Installing face_detection_node script to /home/ubuntu/SWU_Project/install/SWU_Project/lib/SWU_Project
+Installing robot_arm_node script to /home/ubuntu/SWU_Project/install/SWU_Project/lib/SWU_Project
+writing list of installed files to '/home/ubuntu/SWU_Project/build/SWU_Project/install.log'

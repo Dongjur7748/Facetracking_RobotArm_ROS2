@@ -1,0 +1,89 @@
+[0.000000] (-) TimerEvent: {}
+[0.000979] (SWU_Project) JobQueued: {'identifier': 'SWU_Project', 'dependencies': OrderedDict()}
+[0.001993] (SWU_Project) JobStarted: {'identifier': 'SWU_Project'}
+[0.099229] (-) TimerEvent: {}
+[0.200040] (-) TimerEvent: {}
+[0.300845] (-) TimerEvent: {}
+[0.401685] (-) TimerEvent: {}
+[0.502362] (-) TimerEvent: {}
+[0.603008] (-) TimerEvent: {}
+[0.703642] (-) TimerEvent: {}
+[0.804264] (-) TimerEvent: {}
+[0.904956] (-) TimerEvent: {}
+[1.005816] (-) TimerEvent: {}
+[1.107449] (-) TimerEvent: {}
+[1.209337] (-) TimerEvent: {}
+[1.310143] (-) TimerEvent: {}
+[1.410822] (-) TimerEvent: {}
+[1.511444] (-) TimerEvent: {}
+[1.612078] (-) TimerEvent: {}
+[1.712797] (-) TimerEvent: {}
+[1.813469] (-) TimerEvent: {}
+[1.914128] (-) TimerEvent: {}
+[2.014805] (-) TimerEvent: {}
+[2.115439] (-) TimerEvent: {}
+[2.216122] (-) TimerEvent: {}
+[2.316802] (-) TimerEvent: {}
+[2.417511] (-) TimerEvent: {}
+[2.518206] (-) TimerEvent: {}
+[2.618978] (-) TimerEvent: {}
+[2.720058] (-) TimerEvent: {}
+[2.750845] (SWU_Project) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', 'build/SWU_Project', 'build', '--build-base', '/home/ubuntu/SWU_Project/build/SWU_Project/build', 'install', '--record', '/home/ubuntu/SWU_Project/build/SWU_Project/install.log', '--install-scripts', '$base/lib/SWU_Project', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ubuntu/SWU_Project', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_AGENT_PID': '1739', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/cuda-11.8/lib64:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/debian-xterm.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'PS1': '(p3.8-env) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\u@\\h:\\w\\$', 'MANAGERPID': '1641', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '2116', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/ubuntu/SWU_Project/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'ubuntu', 'WINDOWID': '33554447', 'JOURNAL_STREAM': '9:34215', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XTERM_SHELL': '/bin/bash', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ubuntu', 'TERM': 'xterm', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/home/ubuntu/p3.8-env/bin:/usr/local/cuda-11.8/bin:/opt/ros/foxy/bin:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/ubuntu:@/tmp/.ICE-unix/1793,unix/ubuntu:/tmp/.ICE-unix/1793', 'INVOCATION_ID': '0d10f251ea9a490f82f11c2f99dbcaea', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/ubuntu/SWU_Project/install/SWU_Project:/opt/ros/foxy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'VIRTUAL_ENV': '/home/ubuntu/p3.8-env', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ubuntu/SWU_Project/build/SWU_Project', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XTERM_LOCALE': 'en_US.UTF-8', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'XTERM_VERSION': 'XTerm(353)', 'PYTHONPATH': '/home/ubuntu/SWU_Project/build/SWU_Project/prefix_override:/home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages:/p3.8-env/lib/python3.8/site-packages:/p3.9-env/lib/python3.8/site-packages:/home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages:/home/ubuntu/coral/pycoral/numpy:/opt/ros/foxy/lib/python3.8/site-packages:/usr/local/lib/python3.9/site-packages:/home/ubuntu/SWU_Project/lib', 'COLCON': '1'}, 'shell': False}
+[2.820277] (-) TimerEvent: {}
+[2.921075] (-) TimerEvent: {}
+[3.021741] (-) TimerEvent: {}
+[3.122392] (-) TimerEvent: {}
+[3.223017] (-) TimerEvent: {}
+[3.323650] (-) TimerEvent: {}
+[3.424290] (-) TimerEvent: {}
+[3.525001] (-) TimerEvent: {}
+[3.625660] (-) TimerEvent: {}
+[3.665606] (SWU_Project) StdoutLine: {'line': b'running egg_info\n'}
+[3.667651] (SWU_Project) StdoutLine: {'line': b'creating build/SWU_Project/SWU_Project.egg-info\n'}
+[3.668265] (SWU_Project) StdoutLine: {'line': b'writing build/SWU_Project/SWU_Project.egg-info/PKG-INFO\n'}
+[3.669277] (SWU_Project) StdoutLine: {'line': b'writing dependency_links to build/SWU_Project/SWU_Project.egg-info/dependency_links.txt\n'}
+[3.669826] (SWU_Project) StdoutLine: {'line': b'writing entry points to build/SWU_Project/SWU_Project.egg-info/entry_points.txt\n'}
+[3.670380] (SWU_Project) StdoutLine: {'line': b'writing requirements to build/SWU_Project/SWU_Project.egg-info/requires.txt\n'}
+[3.670867] (SWU_Project) StdoutLine: {'line': b'writing top-level names to build/SWU_Project/SWU_Project.egg-info/top_level.txt\n'}
+[3.676179] (SWU_Project) StdoutLine: {'line': b"writing manifest file 'build/SWU_Project/SWU_Project.egg-info/SOURCES.txt'\n"}
+[3.725807] (-) TimerEvent: {}
+[3.802047] (SWU_Project) StderrLine: {'line': b"package init file 'SWU_Project/face_detection/__init__.py' not found (or not a regular file)\n"}
+[3.802742] (SWU_Project) StderrLine: {'line': b"package init file 'SWU_Project/robot_arm/__init__.py' not found (or not a regular file)\n"}
+[3.804248] (SWU_Project) StdoutLine: {'line': b"reading manifest file 'build/SWU_Project/SWU_Project.egg-info/SOURCES.txt'\n"}
+[3.807307] (SWU_Project) StdoutLine: {'line': b"writing manifest file 'build/SWU_Project/SWU_Project.egg-info/SOURCES.txt'\n"}
+[3.807876] (SWU_Project) StdoutLine: {'line': b'running build\n'}
+[3.808319] (SWU_Project) StdoutLine: {'line': b'running build_py\n'}
+[3.808729] (SWU_Project) StdoutLine: {'line': b'creating /home/ubuntu/SWU_Project/build/SWU_Project/build\n'}
+[3.809217] (SWU_Project) StdoutLine: {'line': b'creating /home/ubuntu/SWU_Project/build/SWU_Project/build/lib\n'}
+[3.809731] (SWU_Project) StdoutLine: {'line': b'creating /home/ubuntu/SWU_Project/build/SWU_Project/build/lib/SWU_Project\n'}
+[3.810111] (SWU_Project) StdoutLine: {'line': b'copying SWU_Project/__init__.py -> /home/ubuntu/SWU_Project/build/SWU_Project/build/lib/SWU_Project\n'}
+[3.810938] (SWU_Project) StdoutLine: {'line': b'running install\n'}
+[3.813704] (SWU_Project) StdoutLine: {'line': b'running install_lib\n'}
+[3.817351] (SWU_Project) StdoutLine: {'line': b'creating /home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project\n'}
+[3.817944] (SWU_Project) StdoutLine: {'line': b'copying /home/ubuntu/SWU_Project/build/SWU_Project/build/lib/SWU_Project/__init__.py -> /home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project\n'}
+[3.819965] (SWU_Project) StdoutLine: {'line': b'byte-compiling /home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project/__init__.py to __init__.cpython-38.pyc\n'}
+[3.824333] (SWU_Project) StdoutLine: {'line': b'running install_data\n'}
+[3.824908] (SWU_Project) StdoutLine: {'line': b'creating /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/launch\n'}
+[3.825352] (SWU_Project) StdoutLine: {'line': b'copying SWU_Project/face_detection/launch/face_detection.launch.py -> /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/launch\n'}
+[3.825795] (SWU_Project) StdoutLine: {'line': b'copying SWU_Project/robot_arm/launch/arduino_serial.launch.py -> /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/launch\n'}
+[3.826202] (-) TimerEvent: {}
+[3.826674] (SWU_Project) StdoutLine: {'line': b'copying SWU_Project/robot_arm/launch/robot_arm_control.launch.py -> /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/launch\n'}
+[3.827831] (SWU_Project) StdoutLine: {'line': b'creating /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/config\n'}
+[3.828216] (SWU_Project) StdoutLine: {'line': b'copying SWU_Project/face_detection/config/face_tracker.yaml -> /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/config\n'}
+[3.828673] (SWU_Project) StdoutLine: {'line': b'copying SWU_Project/robot_arm/config/kinematics.yaml -> /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/config\n'}
+[3.829148] (SWU_Project) StdoutLine: {'line': b'copying SWU_Project/robot_arm/config/joint_limits.yaml -> /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/config\n'}
+[3.829569] (SWU_Project) StdoutLine: {'line': b'creating /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/models\n'}
+[3.829997] (SWU_Project) StdoutLine: {'line': b'copying SWU_Project/face_detection/models/ssd_mobilenet_v2_face_quant_postprocess_edgetpu.tflite -> /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/models\n'}
+[3.864628] (SWU_Project) StdoutLine: {'line': b'creating /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/urdf\n'}
+[3.865266] (SWU_Project) StdoutLine: {'line': b'copying SWU_Project/robot_arm/urdf/braccio_arm.urdf -> /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/urdf\n'}
+[3.865722] (SWU_Project) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.871200] (SWU_Project) StdoutLine: {'line': b'Copying build/SWU_Project/SWU_Project.egg-info to /home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project-0.0.1-py3.8.egg-info\n'}
+[3.875399] (SWU_Project) StdoutLine: {'line': b'running install_scripts\n'}
+[3.926336] (-) TimerEvent: {}
+[3.937433] (SWU_Project) StdoutLine: {'line': b'Installing face_detection_node script to /home/ubuntu/SWU_Project/install/SWU_Project/lib/SWU_Project\n'}
+[3.938617] (SWU_Project) StdoutLine: {'line': b'Installing robot_arm_node script to /home/ubuntu/SWU_Project/install/SWU_Project/lib/SWU_Project\n'}
+[3.944489] (SWU_Project) StdoutLine: {'line': b"writing list of installed files to '/home/ubuntu/SWU_Project/build/SWU_Project/install.log'\n"}
+[4.026662] (-) TimerEvent: {}
+[4.040676] (SWU_Project) CommandEnded: {'returncode': 0}
+[4.089495] (SWU_Project) JobEnded: {'identifier': 'SWU_Project', 'rc': 0}
+[4.094624] (-) EventReactorShutdown: {}
