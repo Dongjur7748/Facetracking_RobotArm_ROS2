@@ -1,4 +1,4 @@
-detector_model: "mobilenet_ssd_v2_face_quant_postprocess_edgetpu.tflite"
+detector_model: "ssd_mobilenet_v2_face_quant_postprocess_edgetpu.tflite"
 detection_threshold: 0.6
 input_width: 320
 input_height: 320

@@ -6,8 +6,6 @@ writing entry points to build/SWU_Project/SWU_Project.egg-info/entry_points.txt
 writing requirements to build/SWU_Project/SWU_Project.egg-info/requires.txt
 writing top-level names to build/SWU_Project/SWU_Project.egg-info/top_level.txt
 writing manifest file 'build/SWU_Project/SWU_Project.egg-info/SOURCES.txt'
-package init file 'SWU_Project/face_detection/__init__.py' not found (or not a regular file)
-package init file 'SWU_Project/robot_arm/__init__.py' not found (or not a regular file)
 reading manifest file 'build/SWU_Project/SWU_Project.egg-info/SOURCES.txt'
 writing manifest file 'build/SWU_Project/SWU_Project.egg-info/SOURCES.txt'
 running build
@@ -16,12 +14,25 @@ creating /home/ubuntu/SWU_Project/build/SWU_Project/build
 creating /home/ubuntu/SWU_Project/build/SWU_Project/build/lib
 creating /home/ubuntu/SWU_Project/build/SWU_Project/build/lib/SWU_Project
 copying SWU_Project/__init__.py -> /home/ubuntu/SWU_Project/build/SWU_Project/build/lib/SWU_Project
+creating /home/ubuntu/SWU_Project/build/SWU_Project/build/lib/SWU_Project/face_detection
+copying SWU_Project/face_detection/face_detection_node.py -> /home/ubuntu/SWU_Project/build/SWU_Project/build/lib/SWU_Project/face_detection
+copying SWU_Project/face_detection/__init__.py -> /home/ubuntu/SWU_Project/build/SWU_Project/build/lib/SWU_Project/face_detection
 running install
 running install_lib
 creating /home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project
 copying /home/ubuntu/SWU_Project/build/SWU_Project/build/lib/SWU_Project/__init__.py -> /home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project
+creating /home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project/face_detection
+copying /home/ubuntu/SWU_Project/build/SWU_Project/build/lib/SWU_Project/face_detection/face_detection_node.py -> /home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project/face_detection
+copying /home/ubuntu/SWU_Project/build/SWU_Project/build/lib/SWU_Project/face_detection/__init__.py -> /home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project/face_detection
 byte-compiling /home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project/face_detection/face_detection_node.py to face_detection_node.cpython-38.pyc
+byte-compiling /home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project/face_detection/__init__.py to __init__.cpython-38.pyc
 running install_data
+creating /home/ubuntu/SWU_Project/install/SWU_Project/share/ament_index
+creating /home/ubuntu/SWU_Project/install/SWU_Project/share/ament_index/resource_index
+creating /home/ubuntu/SWU_Project/install/SWU_Project/share/ament_index/resource_index/packages
+copying resource/SWU_Project -> /home/ubuntu/SWU_Project/install/SWU_Project/share/ament_index/resource_index/packages
+copying package.xml -> /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project
 creating /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/launch
 copying SWU_Project/face_detection/launch/face_detection.launch.py -> /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/launch
 copying SWU_Project/robot_arm/launch/arduino_serial.launch.py -> /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/launch

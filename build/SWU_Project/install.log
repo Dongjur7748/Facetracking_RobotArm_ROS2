@@ -1,5 +1,11 @@
 /home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project/__init__.py
+/home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project/face_detection/face_detection_node.py
+/home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project/face_detection/__init__.py
 /home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project/__pycache__/__init__.cpython-38.pyc
+/home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project/face_detection/__pycache__/face_detection_node.cpython-38.pyc
+/home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project/face_detection/__pycache__/__init__.cpython-38.pyc
+/home/ubuntu/SWU_Project/install/SWU_Project/share/ament_index/resource_index/packages/SWU_Project
+/home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/package.xml
 /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/launch/face_detection.launch.py
 /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/launch/arduino_serial.launch.py
 /home/ubuntu/SWU_Project/install/SWU_Project/share/SWU_Project/launch/robot_arm_control.launch.py
