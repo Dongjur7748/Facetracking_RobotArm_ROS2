@@ -10,7 +10,7 @@ ament_python_install_package(${PROJECT_NAME})
 
 install(PROGRAMS
   SWU_Project/face_detection/face_detection_node.py
-  SWU_Project/robot_arm/src/robot_arm_node.py
+  SWU_Project/robot_arm/robot_arm_node.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

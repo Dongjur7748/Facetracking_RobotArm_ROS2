@@ -17,13 +17,21 @@ copying SWU_Project/__init__.py -> /home/ubuntu/SWU_Project/build/SWU_Project/bu
 creating /home/ubuntu/SWU_Project/build/SWU_Project/build/lib/SWU_Project/face_detection
 copying SWU_Project/face_detection/face_detection_node.py -> /home/ubuntu/SWU_Project/build/SWU_Project/build/lib/SWU_Project/face_detection
 copying SWU_Project/face_detection/__init__.py -> /home/ubuntu/SWU_Project/build/SWU_Project/build/lib/SWU_Project/face_detection
+creating /home/ubuntu/SWU_Project/build/SWU_Project/build/lib/SWU_Project/robot_arm
+copying SWU_Project/robot_arm/robot_arm_node.py -> /home/ubuntu/SWU_Project/build/SWU_Project/build/lib/SWU_Project/robot_arm
+copying SWU_Project/robot_arm/__init__.py -> /home/ubuntu/SWU_Project/build/SWU_Project/build/lib/SWU_Project/robot_arm
 running install
 running install_lib
 creating /home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project
+creating /home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project/robot_arm
+copying /home/ubuntu/SWU_Project/build/SWU_Project/build/lib/SWU_Project/robot_arm/robot_arm_node.py -> /home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project/robot_arm
+copying /home/ubuntu/SWU_Project/build/SWU_Project/build/lib/SWU_Project/robot_arm/__init__.py -> /home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project/robot_arm
 copying /home/ubuntu/SWU_Project/build/SWU_Project/build/lib/SWU_Project/__init__.py -> /home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project
 creating /home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project/face_detection
 copying /home/ubuntu/SWU_Project/build/SWU_Project/build/lib/SWU_Project/face_detection/face_detection_node.py -> /home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project/face_detection
 copying /home/ubuntu/SWU_Project/build/SWU_Project/build/lib/SWU_Project/face_detection/__init__.py -> /home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project/face_detection
+byte-compiling /home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project/robot_arm/robot_arm_node.py to robot_arm_node.cpython-38.pyc
+byte-compiling /home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project/robot_arm/__init__.py to __init__.cpython-38.pyc
 byte-compiling /home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project/__init__.py to __init__.cpython-38.pyc
 byte-compiling /home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project/face_detection/face_detection_node.py to face_detection_node.cpython-38.pyc
 byte-compiling /home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project/face_detection/__init__.py to __init__.cpython-38.pyc

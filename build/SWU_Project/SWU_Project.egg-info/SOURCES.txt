@@ -7,6 +7,8 @@ SWU_Project/face_detection/face_detection_node.py
 SWU_Project/face_detection/config/face_tracker.yaml
 SWU_Project/face_detection/launch/face_detection.launch.py
 SWU_Project/face_detection/models/ssd_mobilenet_v2_face_quant_postprocess_edgetpu.tflite
+SWU_Project/robot_arm/__init__.py
+SWU_Project/robot_arm/robot_arm_node.py
 SWU_Project/robot_arm/config/joint_limits.yaml
 SWU_Project/robot_arm/config/kinematics.yaml
 SWU_Project/robot_arm/launch/arduino_serial.launch.py

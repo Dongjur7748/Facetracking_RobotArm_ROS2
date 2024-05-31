@@ -1,14 +1,13 @@
-#! /usr/bin/env python3
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Point
-from sensor_msgs.msg import JointState
+import serial
 
 class RobotArmNode(Node):
     def __init__(self):
         super().__init__('robot_arm_node')
         self.subscription = self.create_subscription(Point, 'face_coordinates', self.control_robot_arm, 10)
-        self.publisher_ = self.create_publisher(JointState, 'joint_states', 10)
+        self.serial_port = serial.Serial('/dev/ttyACM0', 9600, timeout=1)  # 라즈베리파이에 연결된 아두이노 시리얼 포트
         self.declare_parameters()
 
     def declare_parameters(self):
@@ -19,33 +18,17 @@ class RobotArmNode(Node):
         self.planning_time = self.declare_parameter('planning_time', 2.0).value
         self.p_gain_yaw = self.declare_parameter('p_gain_yaw', 0.001).value
         self.p_gain_pitch = self.declare_parameter('p_gain_pitch', 0.001).value
-        self.initial_pose = self.declare_parameter('initial_pose', []).value
+        self.initial_pose = self.declare_parameter('initial_pose', [0, 40, 180, 170, 0, 73]).value
 
-        self.current_js_state = JointState()
+        self.current_js_state = [0, 40, 180, 170, 0, 73]
         self.center_x = self.camera_width / 2.0
         self.center_y = self.camera_height / 2.0
         self.bounding_box_updated = False
         self.camera_current_x = 0
         self.camera_current_y = 0
 
-        self.sub_js = self.create_subscription(JointState, 'current_state', self.callback_joint_state_current, 10)
-        self.sub_box = self.create_subscription(Point, 'face_coordinates', self.callback_bounding_box, 10)
+        self.sub_js = self.create_subscription(Point, 'face_coordinates', self.callback_bounding_box, 10)
         
-        if self.initial_pose:
-            self.set_initial_pose()
-
-    def set_initial_pose(self):
-        initial_js = JointState()
-        initial_js.position = self.initial_pose
-        while rclpy.ok() and not self.goal_reached(self.current_js_state, initial_js, self.goal_tolerance):
-            initial_js.header.stamp = self.get_clock().now().to_msg()
-            self.publisher_.publish(initial_js)
-            rclpy.spin_once(self)
-            self.get_clock().sleep(0.2)
-
-    def callback_joint_state_current(self, msg):
-        self.current_js_state = msg
-
     def callback_bounding_box(self, msg):
         self.camera_current_x = msg.x
         self.camera_current_y = msg.y
@@ -61,26 +44,17 @@ class RobotArmNode(Node):
             self.bounding_box_updated = False
 
     def plan_joint_to_delta(self, delta_x, delta_y):
-        js = JointState()
-        js.position = self.current_js_state.position.copy()
-        js.header.stamp = self.get_clock().now().to_msg()
-
         index_joint_x = 0
         index_joint_y = 3
 
         p_x = self.p_gain_yaw * (1 - self.box_area)
         p_y = self.p_gain_pitch * (1 - self.box_area)
 
-        js.position[index_joint_x] -= delta_x * p_x
-        js.position[index_joint_y] += delta_y * p_y
+        self.current_js_state[index_joint_x] -= delta_x * p_x
+        self.current_js_state[index_joint_y] += delta_y * p_y
 
-        self.publisher_.publish(js)
-
-    def goal_reached(self, current, goal, threshold):
-        if not current.position:
-            return False
-
-        return all(abs(goal.position[i] - current.position[i]) <= threshold for i in range(len(current.position)))
+        command = f"{int(self.current_js_state[0])} {int(self.current_js_state[1])} {int(self.current_js_state[2])} {int(self.current_js_state[3])} {int(self.current_js_state[4])} {int(self.current_js_state[5])}\n"
+        self.serial_port.write(command.encode())
 
 def main(args=None):
     rclpy.init(args=args)
