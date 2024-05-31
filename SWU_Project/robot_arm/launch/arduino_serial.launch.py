@@ -9,7 +9,7 @@ def generate_launch_description():
             name='arduino_control',
             output='screen',
             parameters=[
-                {'port': '/dev/ttyUSB0'},
+                {'port': '/dev/ttyACM0'},
                 {'baudrate': 115200}
             ]
         )

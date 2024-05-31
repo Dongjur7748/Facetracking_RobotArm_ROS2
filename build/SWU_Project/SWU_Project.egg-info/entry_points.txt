@@ -1,4 +1,4 @@
 [console_scripts]
 face_detection_node = SWU_Project.face_detection.face_detection_node:main
-robot_arm_node = SWU_Project.robot_arm.src.robot_arm_node:main
+robot_arm_node = SWU_Project.robot_arm.robot_arm_node:main
 
