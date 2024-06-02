@@ -3,6 +3,11 @@ detection_threshold: 0.6
 input_width: 320
 input_height: 320
 
+focal_length: 500.0
+real_height: 0.15
+
+
 tracker:
   max_cosine_distance: 0.2
   nn_budget: 100
+

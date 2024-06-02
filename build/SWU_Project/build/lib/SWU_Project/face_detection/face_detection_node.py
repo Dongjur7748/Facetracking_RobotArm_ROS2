@@ -68,11 +68,7 @@ class FaceDetectionNode(Node):
 
         faces = self.preprocess_and_infer(frame)
 
-        if not faces:
-            self.get_logger().info("No faces detected.")
-        else:
-            self.get_logger().info(f"Detected {len(faces)} faces.")
-            self.publish_face_coordinates(frame, faces)
+        self.publish_face_coordinates(frame, faces)
 
         cv2.imshow("Frame", frame)
         if cv2.waitKey(1) & 0xFF == ord('q'):
@@ -82,22 +78,29 @@ class FaceDetectionNode(Node):
             rclpy.shutdown()
 
     def publish_face_coordinates(self, frame, faces):
+        frame_height, frame_width, _ = frame.shape
+        center_x, center_y = frame_width // 2, frame_height // 2
+
         for face in faces:
             bbox = face.bbox
             xmin = max(0, bbox.xmin)
             ymin = max(0, bbox.ymin)
-            xmax = min(frame.shape[1], bbox.xmax)
-            ymax = min(frame.shape[0], bbox.ymax)
+            xmax = min(frame_width, bbox.xmax)
+            ymax = min(frame_height, bbox.ymax)
             cx = (xmin + xmax) / 2
             cy = (ymin + ymax) / 2
-            area = (xmax - xmin) * (ymax - ymin)  # Calculate the area of the bounding box
+            cx_relative = cx - center_x
+            cy_relative = cy - center_y
+
             cv2.circle(frame, (int(cx), int(cy)), 5, (0, 255, 0), -1)
             
             point = Point()
-            point.x = float(cx)
-            point.y = float(cy)
-            point.z = float(area)  # Using the area as a proxy for distance
+            point.x = float(cx_relative)
+            point.y = float(cy_relative)
+            point.z = 0.0
             self.publisher_.publish(point)
+            
+            print(f"Face detected at relative coordinates: ({cx_relative}, {cy_relative})")
 
 def main(args=None):
     rclpy.init(args=args)
