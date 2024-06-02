@@ -1,0 +1,37 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/SWU_Project/install/SWU_Project/lib/SWU_Project/robot_arm_node", line 11, in <module>
+    load_entry_point('SWU-Project==0.0.1', 'console_scripts', 'robot_arm_node')()
+  File "/home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project/robot_arm/robot_arm_node.py", line 107, in main
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rclpy/__init__.py", line 191, in spin
+    executor.spin_once()
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rclpy/executors.py", line 719, in spin_once
+    raise handler.exception()
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rclpy/task.py", line 239, in __call__
+    self._handler.send(None)
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rclpy/executors.py", line 429, in handler
+    await call_coroutine(entity, arg)
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rclpy/executors.py", line 354, in _execute_subscription
+    await await_or_execute(sub.callback, msg)
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rclpy/executors.py", line 118, in await_or_execute
+    return callback(*args)
+  File "/home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project/robot_arm/robot_arm_node.py", line 68, in control_robot_arm
+  File "/home/ubuntu/SWU_Project/install/SWU_Project/lib/python3.8/site-packages/SWU_Project/robot_arm/robot_arm_node.py", line 80, in plan_joint_to_delta
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rclpy/impl/rcutils_logger.py", line 334, in info
+    return self.log(message, LoggingSeverity.INFO, **kwargs)
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rclpy/impl/rcutils_logger.py", line 290, in log
+    caller_id = CallerId()
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rclpy/impl/rcutils_logger.py", line 58, in __new__
+    frame = _find_caller(inspect.currentframe())
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rclpy/impl/rcutils_logger.py", line 49, in _find_caller
+    file_path = os.path.realpath(inspect.getframeinfo(frame).filename)
+  File "/usr/lib/python3.8/inspect.py", line 1477, in getframeinfo
+    lines, lnum = findsource(frame)
+  File "/usr/lib/python3.8/inspect.py", line 794, in findsource
+    lines = linecache.getlines(file, module.__dict__)
+  File "/usr/lib/python3.8/linecache.py", line 47, in getlines
+    return updatecache(filename, module_globals)
+  File "/usr/lib/python3.8/linecache.py", line 137, in updatecache
+    lines = fp.readlines()
+  File "/usr/lib/python3.8/codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xbd in position 448: invalid start byte
