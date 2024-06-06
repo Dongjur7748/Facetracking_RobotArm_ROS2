@@ -11,10 +11,10 @@ class RobotArmNode(Node):
         self.subscription = self.create_subscription(Point, 'face_coordinates', self.control_robot_arm, 10)
         self.publisher_ = self.create_publisher(JointState, 'joint_states', 10)
 
-        # ½Ã¸®¾ó Æ÷Æ® ¼³Á¤
+        # ì‹œë¦¬ì–¼ í¬íŠ¸ ì„¤ì •
         try:
             self.serial_port = serial.Serial('/dev/ttyACM0', 115200, timeout=1)
-            time.sleep(2)  # ½Ã¸®¾ó Æ÷Æ®°¡ ÃÊ±âÈ­µÉ ½Ã°£À» ÁÜ
+            time.sleep(2)  # ì‹œë¦¬ì–¼ í¬íŠ¸ê°€ ì´ˆê¸°í™”ë  ì‹œê°„ì„ ì¤Œ
         except serial.SerialException as e:
             print(f"Failed to open serial port: {e}")
             rclpy.shutdown()
@@ -25,12 +25,12 @@ class RobotArmNode(Node):
         self.camera_radius = self.declare_parameter('camera_radius', 10).value
         self.goal_tolerance = self.declare_parameter('goal_tolerance', 0.05).value
         self.planning_time = self.declare_parameter('planning_time', 2.0).value
-        self.p_gain_yaw = self.declare_parameter('p_gain_yaw', 0.1).value  # ¼öÁ¤: ´õ Å« °ª
-        self.p_gain_pitch = self.declare_parameter('p_gain_pitch', 0.1).value  # ¼öÁ¤: ´õ Å« °ª
+        self.p_gain_yaw = self.declare_parameter('p_gain_yaw', 0.1).value  
+        self.p_gain_pitch = self.declare_parameter('p_gain_pitch', 0.1).value  
         self.initial_pose = [float(i) for i in self.declare_parameter('initial_pose', [90, 90, 90, 90, 45, 10]).value]
 
         self.current_js_state = JointState()
-        self.current_js_state.position = self.initial_pose  # ÃÊ±â À§Ä¡ ¼³Á¤
+        self.current_js_state.position = self.initial_pose  # ì´ˆê¸° ìœ„ì¹˜ ì„¤ì •
         self.center_x = self.camera_width / 2.0
         self.center_y = self.camera_height / 2.0
         self.bounding_box_updated = False
@@ -77,7 +77,7 @@ class RobotArmNode(Node):
         index_joint_x = 0
         index_joint_y = 1
 
-        # µğ¹ö±× ¸Ş½ÃÁö Ãß°¡
+        # ë””ë²„ê·¸ ë©”ì‹œì§€ ì¶”ê°€
         print(f"Current joint state positions: {js.position}")
         print(f"Delta X: {delta_x}, Delta Y: {delta_y}")
 
@@ -85,18 +85,18 @@ class RobotArmNode(Node):
             print(f"Index out of range: len(js.position)={len(js.position)}, index_joint_x={index_joint_x}, index_joint_y={index_joint_y}")
             return
 
-        # PID gain Á¶Á¤
+        # PID gain ì¡°ì •
         p_x = self.p_gain_yaw * delta_x
         p_y = self.p_gain_pitch * delta_y
 
         js.position[index_joint_x] -= p_x
         js.position[index_joint_y] += p_y
 
-        # °¢µµ¸¦ Á¤¼ö·Î º¯È¯ÇÏ¿© Àü¼Û
+        # ê°ë„ë¥¼ ì •ìˆ˜ë¡œ ë³€í™˜í•˜ì—¬ ì „ì†¡
         command = ' '.join([str(int(angle)) for angle in js.position]) + '\n'
         print(f"Sending command: {command}")
         self.serial_port.write(command.encode())
-        self.serial_port.flush()  # µ¥ÀÌÅÍ¸¦ È®½ÇÈ÷ Àü¼ÛÇÏ±â À§ÇØ flush È£Ãâ
+        self.serial_port.flush()  # ë°ì´í„°ë¥¼ í™•ì‹¤íˆ ì „ì†¡í•˜ê¸° ìœ„í•´ flush í˜¸ì¶œ
 
     def goal_reached(self, current, goal, threshold):
         if not current.position:
